@@ -1,35 +1,27 @@
-<div class="actualites-container">
-
-    <!-- 3 images alignées -->
-    <div class="images-row">
-      <div class="image-box">
-        <img src="assets/image1.jpg" alt="Image 1" />
-      </div>
-      <div class="image-box">
-        <img src="assets/image2.jpg" alt="Image 2" />
-      </div>
-      <div class="image-box">
-        <img src="assets/image3.jpg" alt="Image 3" />
+<main>
+    <div class="realisations-container">
+      <div 
+        class="realisation-box" 
+        [class.image-only-box]="i < 3"  
+        *ngFor="let item of realisations; let i = index"
+      >
+        <div class="realisation-content">
+          <!-- Pour les 3 premiers, image seule pleine largeur/hauteur -->
+          <div *ngIf="i < 3" class="image-only">
+            <img src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" />
+          </div>
+  
+          <!-- Pour les suivants, texte seul -->
+          <div *ngIf="i >= 3" class="text-only">
+            <p [innerHTML]="item.description"></p>
+            
+          </div>
+        </div>
       </div>
     </div>
+  </main>
   
-    <!-- 3 textes alignés -->
-    <div class="texts-row">
-      <div class="text-box">
-        <p>Texte de la première actualité, description ou résumé.</p>
-      </div>
-      <div class="text-box">
-        <p>Deuxième actualité avec un bref texte informatif.</p>
-      </div>
-      <div class="text-box">
-        <p>Troisième actualité détaillée, avec des informations clés.</p>
-      </div>
-    </div>
-  
-    <!-- section finale verte -->
-    <div class="footer-section">
-      <p>Merci de suivre nos actualités ! Restons engagés ensemble.</p>
-    </div>
-  
-  </div>
+  <footer class="footer">
+    <button class="btn-rapport">Rapport d'activité</button>
+  </footer>
   

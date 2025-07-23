@@ -2,7 +2,6 @@
     position: relative;
     height: 100vh; /* prend toute la hauteur de la fenêtre */
     background-image: url('/assets/fond_acceuil.jpg');
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,5 +51,80 @@
   
   .btn-rapport:hover {
     background-color: #c8e6c9; /* vert clair au survol */
+  }
+  
+  .section2 img {
+    display: block;
+    margin: 0 auto; /* centre l'image horizontalement */
+    max-width: 100%; /* responsive, ne dépasse pas la largeur du conteneur */
+    height: auto;
+  }
+  
+  
+
+  
+  /* Footer */
+  .footer {
+    background-color: #5D4037; /* marron */
+    color: white;
+    padding: 3px 20px 6px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+  }
+  
+  .footer-section {
+    flex: 1 1 140px;
+    min-width: 140px;
+    margin-bottom: 6px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centre cercle et bloc texte */
+    text-align: center;   /* centre horizontal du bloc texte */
+  }
+  
+  .circle-number {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2e7d32;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  
+    margin-left: -30px; /* décale encore plus vers la gauche */
+    margin-right: 8px;
+  }
+  
+  
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* texte aligné à gauche */
+    text-align: left;
+    width: 160px; /* largeur fixe pour aligner correctement */
+  }
+  
+  .text-wrapper h3 {
+    margin: 0 0 3px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  
+  .text-wrapper p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.1;
   }
   

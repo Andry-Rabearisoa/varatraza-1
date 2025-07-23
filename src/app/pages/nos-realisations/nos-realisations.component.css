@@ -1,4 +1,18 @@
-.realisations-container {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  main {
+    padding: 20px;
+    padding-bottom: 80px; /* espace pour ne pas être caché par le footer */
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  
+  .realisations-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -15,44 +29,52 @@
   
   .realisation-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* aligne le texte et l’image en haut */
     gap: 15px;
+    min-height: 110px; /* au moins la hauteur de l’image */
   }
   
   .realisation-content .text {
-    flex: 1; /* prend tout l'espace restant */
-  }
-  
-  .realisation-content .text h3 {
-    margin: 0 0 8px 0;
+    flex: 1;
   }
   
   .realisation-content .text p {
     margin: 0;
   }
   
+  .realisation-content .image {
+    flex-shrink: 0; /* empêcher l’image de rétrécir */
+    position: relative;
+  }
+  
   .realisation-content .image img {
-    width: 100px;
-    height: 80px;
+    width: 120px;
+    height: 150px; /* hauteur plus grande */
     object-fit: cover;
     border-radius: 5px;
+    margin-right: -15px; /* fait dépasser l’image à droite */
+    display: block;
   }
-
+  
+  
   .footer {
     background-color: #5D3A1A; /* marron */
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
+    height: 60px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
   }
   
   .btn-rapport {
     background-color: white;
-    color: #5D3A1A; /* texte marron */
+    color: #5D3A1A;
     border: none;
-    padding: 10px 25px;
+    padding: 8px 20px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -62,5 +84,4 @@
   .btn-rapport:hover {
     background-color: #e6e6e6;
   }
-  
   

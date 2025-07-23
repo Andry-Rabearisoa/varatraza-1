@@ -1,62 +1,107 @@
-.actualites-container {
-    max-width: 1200px;
-    margin: 0 auto;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  main {
     padding: 20px;
-    font-family: Arial, sans-serif;
+    padding-bottom: 80px; /* pour espace footer */
+    box-sizing: border-box;
+    min-height: 100vh;
   }
   
-  /* Ligne images */
-  .images-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  .realisations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
   }
   
-  .image-box {
-    flex: 1;
-    margin: 0 10px;
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .image-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-box img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Ligne textes */
-  .texts-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  
-  .text-box {
-    flex: 1;
-    margin: 0 10px;
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  /* Section finale verte */
-  .footer-section {
+  /* Style par défaut des blocs (texte + fond vert) */
+  .realisation-box {
     background-color: #2e7d32; /* vert */
-    color: white;
-    padding: 25px 15px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px; /* hauteur fixe pour uniformité */
+  }
+  
+  /* Pour les 3 premiers blocs image : pas de fond, pas d’ombre, padding à 0 */
+  .realisation-box.image-only-box {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 8px; /* garder l'arrondi */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px; /* même hauteur que les blocs texte */
+  }
+  
+  /* Conteneur image */
+  .image-only {
+    border-radius: 8px;
+    padding: 5px; /* petit espace interne */
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%; /* prend toute la hauteur du conteneur */
+    max-width: 100%;
+  }
+  
+  /* Image */
+  .image-only img {
+    width: 100%;
+    height: 100%; /* remplit le conteneur */
+    object-fit: cover;
+    display: block;
+    border-radius: 5px; /* léger arrondi */
+    margin: 0;
+  }
+  
+  /* Conteneur texte pour les autres */
+  .text-only {
+    padding: 0 10px;
+  }
+  
+  .text-only p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #5D3A1A; /* marron */
+    padding: 10px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+  
+  .btn-rapport {
+    background-color: white;
+    color: #5D3A1A;
+    border: none;
+    padding: 8px 20px;
     font-weight: bold;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-rapport:hover {
+    background-color: #e6e6e6;
   }
   
