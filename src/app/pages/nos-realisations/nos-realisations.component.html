@@ -1,0 +1,18 @@
+<div class="realisations-container">
+    <div class="realisation-box" *ngFor="let item of realisations; let i = index">
+      <div class="realisation-content">
+        <div class="text">
+          <p>{{ item.description }}</p>
+        </div>
+        <div class="image">
+          <img src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Contenu principal ici -->
+
+<footer class="footer">
+    <button class="btn-rapport">Rapport d'activité</button>
+  </footer>
+    

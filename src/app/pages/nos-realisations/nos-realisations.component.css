@@ -1,0 +1,66 @@
+.realisations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .realisation-box {
+    background-color: #2e7d32; /* vert */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    color: white;
+  }
+  
+  .realisation-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .realisation-content .text {
+    flex: 1; /* prend tout l'espace restant */
+  }
+  
+  .realisation-content .text h3 {
+    margin: 0 0 8px 0;
+  }
+  
+  .realisation-content .text p {
+    margin: 0;
+  }
+  
+  .realisation-content .image img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .footer {
+    background-color: #5D3A1A; /* marron */
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .btn-rapport {
+    background-color: white;
+    color: #5D3A1A; /* texte marron */
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-rapport:hover {
+    background-color: #e6e6e6;
+  }
+  
+  
