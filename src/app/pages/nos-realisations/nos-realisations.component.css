@@ -91,3 +91,27 @@ body, html {
   .btn-rapport:hover {
     background-color: #e6e6e6;
   }
+  body, html {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  main {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .realisation-box {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .realisation-text {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .footer {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .btn-rapport {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  

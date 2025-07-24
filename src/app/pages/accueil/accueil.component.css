@@ -1,4 +1,20 @@
-.accueil-container {
+/* Exemple d'import local de Geomanist (à adapter selon ta source) */
+/* @font-face {
+  font-family: 'Geomanist';
+  src: url('/fonts/Geomanist-Regular.woff2') format('woff2'),
+       url('/fonts/Geomanist-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* Ou une alternative Google Fonts : Poppins (à mettre dans ton <head>) */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> */
+
+body, html {
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif; /* Met Geomanist en priorité */
+  }
+  
+  .accueil-container {
     position: relative;
     height: 100vh;
     background-image: url('/assets/fond_acceuil.jpg');
@@ -8,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .overlay {
@@ -25,6 +42,7 @@
     color: white;
     max-width: 600px;
     padding: 20px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   /* Animations individuelles */
@@ -34,38 +52,25 @@
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease forwards;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .content h1 {
     animation-delay: 0.3s;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .content p {
     animation-delay: 0.8s;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .content .btn-rapport {
     animation-delay: 1.3s;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .btn-rapport {
     background-color: white;
     color: #2e7d32;
     border: none;
@@ -75,26 +80,118 @@
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
-  .btn-rapport:hover {
+  .content .btn-rapport:hover {
     background-color: #c8e6c9;
   }
   
-  /* IMAGE SECTION */
-  .section2 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
-  /* FOOTER */
-  .footer {
-    background-color: #988278;
+  .section2-objectifs {
+    background-color: #0e5c4f;
     color: white;
-    padding: 30px 20px 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .objectifs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .left-column h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .objectif-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #0e5c4f;
+    margin-right: 15px;
+  }
+  
+  .objectif-text h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .objectif-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .titre-droite {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .discours {
+    position: relative;
+    text-align: justify;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .quote {
+    font-size: 60px;
+    font-weight: bold;
+    color: #A0A09F;
+    float: left;
+    line-height: 40px;
+    margin-right: 10px;
+    font-family: 'Georgia', serif; /* ici serif c’est plus joli pour la quote */
+  }
+  
+  .photo-presidente {
+    margin-top: -50px;
+    max-width: 200px;
+    border-radius: 10px;
+    float: right;
+  }
+  
+  .footer {
+    background-color: #A0A09F;
+    color: white;
+    padding: 50px 20px 60px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .footer-sections-container {
@@ -149,12 +246,47 @@
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.4;
-    color: #f0e6e6;
+    color: white;
   }
+  
   #typed-text {
     font-size: 20px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
     color: #fff;
+  }
+  
+  .ambition-block {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+  
+  .ambition-text {
+    flex: 1;
+    min-width: 250px;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .ambition-image {
+    max-width: 250px;
+    flex-shrink: 0;
+  }
+  
+  .ambition-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   

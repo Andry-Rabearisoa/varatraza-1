@@ -26,6 +26,7 @@
     height: 40px;         /* hauteur fixe */
     overflow: visible;    /* pour que les éléments qui dépassent restent visibles */
     line-height: 40px;    /* pour centrer verticalement le texte si besoin */
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
   
   .navbar-left {
