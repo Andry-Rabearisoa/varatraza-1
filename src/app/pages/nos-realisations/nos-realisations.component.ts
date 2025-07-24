@@ -23,17 +23,17 @@ export class NosRealisationsComponent {
     solaire aux fokontany du district de Mitsino depuis le 
     mois d’avril 2024 au mois de Mars 2025 d’un montant 
     total de 40 000 000 Ar.`,
-      image: 'image1.jpg'
+      image: 'image2RE.jpg'
     }
     ,
     {
       description: `RÉHABILITATION et extension du lycée d’enseignement général de Mitsinjo partenariat avec le Fondation Axian. Dont les travaux ont débuté en Août 2024, qui seront achevés en mois d’octobre 2025 et l’inauguration a et prévue en novembre 2025 avec un coût total de 650 000 000 Ar.`,
-      image: 'image1.jpg'
+      image: 'image3RE.jpg'
     }
     ,
     {
       description: "Distribution des matériels, effets et équipements sportifs dans le district de Mitsinjo en mars 2024 jusqu’au décembre 2025 avec un coût total de 15 000 000 Ar en effets et équipements de sport distribue.",
-      image: 'image1.jpg'
+      image: 'image4RE.jpg'
     }
     ,
     {

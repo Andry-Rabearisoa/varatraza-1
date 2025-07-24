@@ -1,13 +1,11 @@
-<main>
+<main class="fade-in">
     <div class="realisations-container">
-      <div class="realisation-box" *ngFor="let item of realisations; let i = index">
+      <div class="realisation-box fade-in" *ngFor="let item of realisations; let i = index">
         <div class="realisation-content">
-          <img src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" class="realisation-image" />
-          <p class="realisation-text">{{ item.description }}</p>
+          <img src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" class="realisation-image fade-in" />
+          <p class="realisation-text fade-in">{{ item.description }}</p>
         </div>
       </div>
     </div>
   </main>
-  
-
   

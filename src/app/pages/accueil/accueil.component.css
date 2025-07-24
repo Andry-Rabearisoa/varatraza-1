@@ -135,13 +135,59 @@ body, html {
   }
   
   .circle {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    border: none;
+    margin-right: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse-ring 2s infinite ease-in-out;
+  }
+  
+  .circle::after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: white;
-    border: 2px solid #0e5c4f;
-    margin-right: 15px;
+    left: 6px;
+    top: 6px;
+    z-index: 1;
   }
+  
+  .circle::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #00b894;
+    border-radius: 50%;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+  }
+  
+  
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 184, 148, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(0, 184, 148, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 184, 148, 0);
+    }
+  }
+  
   
   .objectif-text h3 {
     margin: 0;
