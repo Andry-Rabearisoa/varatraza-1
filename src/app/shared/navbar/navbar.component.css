@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2e7d32; /* fond vert */
+    background-color: #3E5724; /* fond vert */
     padding: 10px 20px;
     font-family: Arial, sans-serif;
     height: 80px;
@@ -58,6 +58,8 @@
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+
   }
   
   .nav-links li a:hover,

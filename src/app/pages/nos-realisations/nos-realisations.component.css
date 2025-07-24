@@ -7,66 +7,73 @@ body, html {
   
   main {
     padding: 20px;
-    padding-bottom: 80px; /* espace pour ne pas être caché par le footer */
+    padding-bottom: 80px; /* pour laisser de l'espace au footer */
     box-sizing: border-box;
     min-height: 100vh;
   }
   
   .realisations-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
   }
   
   .realisation-box {
-    background-color: #2e7d32; /* vert */
+    background-color: #A0A09F;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    padding: 15px;
+    overflow: hidden;
+    padding: 0;
     color: white;
-  }
-  
-  .realisation-content {
+    box-shadow: 0 2px 5px rgba(182, 175, 175, 0.2);
     display: flex;
-    align-items: flex-start; /* aligne le texte et l’image en haut */
-    gap: 15px;
-    min-height: 110px; /* au moins la hauteur de l’image */
+    flex-direction: column;
+    text-align: center;
+  
+    /* Ajout transition pour effet smooth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .realisation-content .text {
-    flex: 1;
+  /* Au survol, on agrandit un peu la boîte et on augmente l'ombre */
+  .realisation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    background-color: #5e5d5b; /* couleur plus foncée */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .realisation-content .text p {
-    margin: 0;
-  }
   
-  .realisation-content .image {
-    flex-shrink: 0; /* empêcher l’image de rétrécir */
-    position: relative;
-  }
-  
-  .realisation-content .image img {
-    width: 120px;
-    height: 150px; /* hauteur plus grande */
-    object-fit: cover;
-    border-radius: 5px;
-    margin-right: -15px; /* fait dépasser l’image à droite */
+  .realisation-image {
+    width: 100%;
+    height: 200px; /* ou auto si tu veux garder le ratio */
+    object-fit: cover; /* pour bien remplir sans déformer */
     display: block;
   }
   
   
+  .realisation-text {
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left; /* aligne le texte à gauche */
+        margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+
+  }
+  
+  
+  
   .footer {
-    background-color: #5D3A1A; /* marron */
+    background-color: #988278; /* marron */
     padding: 10px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 60px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    height: 50px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     z-index: 100;
   }
   
@@ -84,4 +91,3 @@ body, html {
   .btn-rapport:hover {
     background-color: #e6e6e6;
   }
-  

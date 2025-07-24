@@ -1,27 +1,9 @@
-<main>
-    <div class="realisations-container">
-      <div 
-        class="realisation-box" 
-        [class.image-only-box]="i < 3"  
-        *ngFor="let item of realisations; let i = index"
-      >
-        <div class="realisation-content">
-          <!-- Pour les 3 premiers, image seule pleine largeur/hauteur -->
-          <div *ngIf="i < 3" class="image-only">
-            <img src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" />
-          </div>
-  
-          <!-- Pour les suivants, texte seul -->
-          <div *ngIf="i >= 3" class="text-only">
-            <p [innerHTML]="item.description"></p>
-            
-          </div>
-        </div>
+<div class="realisations-container">
+    <div class="realisation-box" *ngFor="let item of realisations; let i = index">
+      <div class="realisation-content">
+        <img *ngIf="item.image" src="assets/{{ item.image }}" alt="Image réalisation {{ i + 1 }}" class="realisation-image" />
+        <p class="realisation-text" [innerHTML]="item.description"></p>
       </div>
     </div>
-  </main>
-  
-  <footer class="footer">
-    <button class="btn-rapport">Rapport d'activité</button>
-  </footer>
+  </div>
   

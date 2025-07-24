@@ -7,86 +7,73 @@ body, html {
   
   main {
     padding: 20px;
-    padding-bottom: 80px; /* pour espace footer */
+    padding-bottom: 80px; /* pour laisser de l'espace au footer */
     box-sizing: border-box;
     min-height: 100vh;
   }
   
   .realisations-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
   }
   
-  /* Style par défaut des blocs (texte + fond vert) */
   .realisation-box {
-    background-color: #2e7d32; /* vert */
+    background-color: #A0A09F;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    padding: 15px;
+    overflow: hidden;
+    padding: 0;
     color: white;
+    box-shadow: 0 2px 5px rgba(182, 175, 175, 0.2);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px; /* hauteur fixe pour uniformité */
+    flex-direction: column;
+    text-align: center;
+  
+    /* Ajout transition pour effet smooth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Pour les 3 premiers blocs image : pas de fond, pas d’ombre, padding à 0 */
-  .realisation-box.image-only-box {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    border-radius: 8px; /* garder l'arrondi */
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px; /* même hauteur que les blocs texte */
+  /* Au survol, on agrandit un peu la boîte et on augmente l'ombre */
+  .realisation-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    background-color: #5e5d5b; /* couleur plus foncée */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  /* Conteneur image */
-  .image-only {
-    border-radius: 8px;
-    padding: 5px; /* petit espace interne */
-    box-sizing: border-box;
+  
+  .realisation-image {
     width: 100%;
-    height: 80%; /* prend toute la hauteur du conteneur */
-    max-width: 100%;
-  }
-  
-  /* Image */
-  .image-only img {
-    width: 100%;
-    height: 100%; /* remplit le conteneur */
-    object-fit: cover;
+    height: 200px; /* ou auto si tu veux garder le ratio */
+    object-fit: cover; /* pour bien remplir sans déformer */
     display: block;
-    border-radius: 5px; /* léger arrondi */
-    margin: 0;
   }
   
-  /* Conteneur texte pour les autres */
-  .text-only {
-    padding: 0 10px;
-  }
   
-  .text-only p {
-    margin: 0;
+  .realisation-text {
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left; /* aligne le texte à gauche */
+        margin: 0;
     font-size: 1rem;
     line-height: 1.4;
+
   }
   
-  /* Footer */
+  
+  
   .footer {
-    background-color: #5D3A1A; /* marron */
+    background-color: #988278; /* marron */
     padding: 10px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 60px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    height: 50px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     z-index: 100;
   }
   
@@ -104,4 +91,3 @@ body, html {
   .btn-rapport:hover {
     background-color: #e6e6e6;
   }
-  

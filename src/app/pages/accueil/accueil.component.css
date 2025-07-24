@@ -1,6 +1,6 @@
 .accueil-container {
     position: relative;
-    height: 100vh; /* prend toute la hauteur de la fenêtre */
+    height: 100vh;
     background-image: url('/assets/fond_acceuil.jpg');
     background-size: cover;
     background-position: center;
@@ -13,18 +13,46 @@
   .overlay {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* voile sombre transparent pour lisibilité */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .content {
-    position: relative; /* au-dessus de l’overlay */
+    position: relative;
     text-align: center;
     color: white;
     max-width: 600px;
     padding: 20px;
+  }
+  
+  /* Animations individuelles */
+  .content h1,
+  .content p,
+  .content .btn-rapport {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .content h1 {
+    animation-delay: 0.3s;
+  }
+  
+  .content p {
+    animation-delay: 0.8s;
+  }
+  
+  .content .btn-rapport {
+    animation-delay: 1.3s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .content h1 {
@@ -39,7 +67,7 @@
   
   .btn-rapport {
     background-color: white;
-    color: #2e7d32; /* vert */
+    color: #2e7d32;
     border: none;
     padding: 12px 30px;
     font-size: 1rem;
@@ -50,81 +78,83 @@
   }
   
   .btn-rapport:hover {
-    background-color: #c8e6c9; /* vert clair au survol */
+    background-color: #c8e6c9;
   }
   
+  /* IMAGE SECTION */
   .section2 img {
     display: block;
-    margin: 0 auto; /* centre l'image horizontalement */
-    max-width: 100%; /* responsive, ne dépasse pas la largeur du conteneur */
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
   }
   
-  
-
-  
-  /* Footer */
+  /* FOOTER */
   .footer {
-    background-color: #5D4037; /* marron */
+    background-color: #988278;
     color: white;
-    padding: 3px 20px 6px;
-    font-family: Arial, sans-serif;
+    padding: 30px 20px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .footer-sections-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 12px;
+    gap: 20px;
   }
   
   .footer-section {
-    flex: 1 1 140px;
-    min-width: 140px;
-    margin-bottom: 6px;
-  
+    flex: 1 1 180px;
+    min-width: 180px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* centre cercle et bloc texte */
-    text-align: center;   /* centre horizontal du bloc texte */
+    align-items: center;
+    text-align: center;
   }
   
   .circle-number {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background-color: white;
     border-radius: 50%;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 1rem;
-    color: #2e7d32;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  
-    margin-left: -30px; /* décale encore plus vers la gauche */
-    margin-right: 8px;
+    font-size: 1.6rem;
+    color: rgb(214, 46, 46);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   }
-  
   
   .text-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* texte aligné à gauche */
-    text-align: left;
-    width: 160px; /* largeur fixe pour aligner correctement */
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
   }
   
   .text-wrapper h3 {
-    margin: 0 0 3px 0;
-    font-size: 0.9rem;
+    margin: 5px 0 6px;
+    font-size: 1.1rem;
     font-weight: 700;
+    color: #FFD54F;
+    letter-spacing: 0.5px;
   }
   
   .text-wrapper p {
     margin: 0;
-    font-size: 0.8rem;
-    line-height: 1.1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #f0e6e6;
+  }
+  #typed-text {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
   }
   
