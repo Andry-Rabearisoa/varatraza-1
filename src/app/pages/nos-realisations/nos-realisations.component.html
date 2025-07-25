@@ -1,0 +1,44 @@
+<main class="fade-in">
+  <div class="realisations-container">
+    <div
+      class="realisation-box fade-in"
+      *ngFor="let item of realisations; let i = index"
+      (click)="openModal(item)"
+      style="cursor: pointer;"
+    >
+      <div class="realisation-content">
+        <img
+          src="assets/{{ item.image }}"
+          alt="Image réalisation {{ i + 1 }}"
+          class="realisation-image fade-in"
+        />
+        <p class="realisation-text fade-in">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Modal -->
+<div class="modal-overlay" *ngIf="modalOpen" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="modal-close-btn" (click)="closeModal()">✕</button>
+
+    <video
+      *ngIf="modalContent?.video"
+      class="modal-video"
+      [attr.src]="'assets/' + modalContent.video"
+      controls
+      autoplay
+      playsinline
+    ></video>
+
+    <img
+      *ngIf="!modalContent?.video && modalContent?.image"
+      [src]="'assets/' + modalContent.image"
+      alt="Image agrandie"
+      class="modal-image"
+    />
+
+    <div class="modal-description">{{ modalContent?.description }}</div>
+  </div>
+</div>
