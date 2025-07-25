@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E5724; /* fond vert */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    height: 80px;
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .navbar-right .social-icons {
+    background-color: white; /* fond blanc juste ici */
+   
+    height: 50px;
+    margin-right: -20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+    height: 40px;         /* hauteur fixe */
+    overflow: visible;    /* pour que les éléments qui dépassent restent visibles */
+    line-height: 40px;    /* pour centrer verticalement le texte si besoin */
+    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .logo {
+    width: 120px;       /* largeur plus large */
+    height: auto;       /* hauteur proportionnelle */
+    position: relative;
+    top: 10px;          /* dépassement en bas */
+    margin-right: 20px;
+  }
+  
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #a5d6a7; /* vert clair au survol et actif */
+  }
+  
+  .navbar-right .social-icons {
+    background-color: white;
+    padding: 5px 10px;
+
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-right .social-icons a {
+    color: #0077b5; /* Bleu LinkedIn par défaut */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-right .social-icons a:nth-child(2) {
+    color: #1877f2; /* Bleu Facebook */
+  }
+  
+  .navbar-right .social-icons a:hover {
+    color: #005582; /* Un bleu plus foncé au hover */
+  }
+  
+  
+  .navbar-right a:hover {
+    color: #a5d6a7; /* vert clair au survol */
+  }
+  

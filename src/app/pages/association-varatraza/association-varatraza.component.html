@@ -1,0 +1,62 @@
+<div class="association-container">
+
+    <!-- Ligne 1 : Qui sommes-nous (gauche) -->
+    <div class="row">
+      <div class="col-left">
+        <h2>Qui sommes-nous ?</h2>
+        <p><strong>L’Association Varatraza</strong> est une plateforme qui rassemble des personnalités engagées pour un développement équilibré et durable à Madagascar.</p>
+        <p><strong>Objectifs :</strong></p>
+        <ul>
+          <li>Promouvoir le développement économique, social et culturel.</li>
+          <li>Préserver les patrimoines.</li>
+          <li>Protéger la biodiversité en accord avec la population locale.</li>
+        </ul>
+        <p><strong>Zone d’influence :</strong> Prioritairement le district de Mitsinjo, mais étendue à tout Madagascar.</p>
+      </div>
+      <div class="col-right spacer"></div>
+    </div>
+  
+    <!-- Ligne 2 : Nos valeurs (droite) -->
+    <div class="row">
+      <div class="col-left spacer"></div>
+      <div class="col-right values">
+        <h3>Nos valeurs</h3>
+        <p>L’association « VARATRAZA » est indépendante de toute organisation politique ou confessionnelle. Elle accueille tous ceux qui adhèrent à ses statuts sans discrimination.</p>
+        <p>Elle garantit la liberté de conscience et veille au respect du principe d’égalité entre ses membres.</p>
+      </div>
+    </div>
+  
+    <!-- Ligne 3 : Membres de bureau (gauche) -->
+    <div class="row">
+      <div class="col-left">
+        <h3>MEMBRES DE BUREAU DE L'ASSOCIATION VARATRAZA</h3>
+      </div>
+      <div class="col-right spacer"></div>
+    </div>
+  
+    <!-- Ligne 4 : Cartes à gauche / Présidente à droite -->
+    <div class="members-layout">
+      <div class="member-cards">
+        <div class="card" *ngFor="let member of membres">
+          <div class="photo-container">
+            <img [src]="member.photo" [alt]="member.nom" class="photo" />
+          </div>
+          <div class="info">
+            <p class="name">{{ member.nom }}</p>
+            <p class="role">{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="president-card">
+        <div class="photo-container">
+          <img src="assets/pr.jpg" alt="Présidente" class="photo" />
+        </div>
+        <div class="info">
+          <p class="name">KALOPER Beby BUONO</p>
+          <p class="role">Présidente</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
