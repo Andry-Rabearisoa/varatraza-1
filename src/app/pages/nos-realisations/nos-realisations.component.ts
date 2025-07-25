@@ -47,13 +47,13 @@ export class NosRealisationsComponent {
     juillet 2024 au mois de janvier 2025 dont le montant 
     total est de 24 500 000 Ar (3 500 000 Ar par Fokontany) : Namakia, Mitsinjo, Antongomena Bevary, 
     Belalanda, Bemahazaka, Bekipay, Sankoany.`,
-      image: 'image1.jpg'
+      image: '1753430901216.jpg'
     }
     ,
     {
       description: `Don Lakam-by (pirogue en tôle) la livraison prévue en novembre 2025 d’un montant 
     total de 7 000 000 Ar.`,
-      image: 'image1.jpg'
+      image: 'E36ABD53.png'
     }
     ,
     {
@@ -61,7 +61,7 @@ export class NosRealisationsComponent {
     Namakia et Katsepy durant la période d’octobre 2024 
     au mois de mars 2025 montants total des dons est de 
     100 000 000 Ar.`,
-      image: 'image1.jpg'
+      image: 'voria.jpg'
     }
     ,
     {
@@ -70,17 +70,21 @@ export class NosRealisationsComponent {
     bao, Androtra, Ambararata, Ambarimaninga, Mahaditra, 
     Antseza. Et le montant total de tous les travaux est de 
     35 000 000 Ar.`,
-      image: 'image1.jpg'
+      image: '1753430750970.jpg'
     }
-    ,
-    {
-      description: `Régularisation statu l’association Varatraza 
-    œuvrant pour le développement du District de Mitsinjo 
-    suivant RECEPISSE N°686/24-MI/DIRAT/MGA/SAGT/ASS 
-    du 20 Novembre 2024 qui et le montant déboursé par 
-    l’association est de 200 000 Ar.`,
-      image: 'image1.jpg'
-    }
-  
+
   ];
+
+  modalOpen = false;
+  modalContent: any = null;
+
+  openModal(item: any) {
+    this.modalContent = item;
+    this.modalOpen = true;
+  }
+
+  closeModal() {
+    this.modalOpen = false;
+    this.modalContent = null;
+  }
 }
