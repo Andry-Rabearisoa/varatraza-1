@@ -335,4 +335,16 @@ body, html {
     color: #333;
     font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
   }
+  .circle-number::before {
+    content: "+";
+    margin-left: 0.2rem;
+    font-weight: 700;
+    color: inherit;
+  }
+  .circle-number[data-target="84000"] {
+    font-size: 1rem;
+    transform: translateX(-5px); /* déplace tout 5px vers la gauche */
+  }
+  
+
   
