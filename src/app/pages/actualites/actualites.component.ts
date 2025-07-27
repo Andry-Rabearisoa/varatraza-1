@@ -14,21 +14,23 @@ export class ActualitesComponent {
     {
 
       video: '11.mp4',
-      description: `Formation et fabrication de serviette hygiénique réutilisable
-      Dans le district de Mitsinjo, à Madagascar, l'association Varatraza met en œuvre une initiative innovante pour lutter contre la précarité menstruelle en formant les femmes et les jeunes filles à la fabrication de serviettes hygiéniques réutilisables.`
+      titre:'Formation à la fabrication de serviettes hygiéniques réutilisables dans le district de Mitsinjo',
+      description: `L’association Varatraza met en œuvre une initiative pour lutter contre la précarité menstruelle.`
      
     }
     ,
     {
 
       image: 'image2actu.jpg',
-      description: `Dans le district de Mitsinjo, une descente sur le terrain a été organisée pour réaliser les études de variantes en vue de la reconstruction du pont d'Ambararatabe, un ouvrage essentiel pour la connectivité locale. Cette mission, menée par les autorités et des experts en génie civil, vise à évaluer les conditions du site, analyser les contraintes techniques et environnementales.`
+      titre:'Descente préalable à Ambararatabe pour l’étude des variantes de construction d’un pont',
+      description: `Une mission a été menée par l’association Varatraza et ses équipes, en présence des autorités locales, dont le maire de la commune d’Antseza et le président du fokontany d’Ambararatabe, avec pour objectif d’évaluer les conditions techniques et environnementales du site afin de dégager la solution la plus adaptée.`
    
     }
     ,
     {
    image: '1753431582193.jpg',
-   description: `Dans la commune d'Antseza, une descente sur le terrain a été entreprise pour identifier le potentiel du bassin versant de Marololo, dans le cadre d’études préliminaires à la reconstruction du pont d’Ambararatabe. Cette mission, menée en collaboration avec des experts en hydrologie et des partenaires comme Varatraza, vise à analyser les caractéristiques hydrologiques, topographiques et environnementales du bassin versant.`
+   titre:'Périmètre irrigué d’Antseza',
+   description: `Une descente préliminaire s’est tenue à Antseza, au mois de juin, afin d’identifier le potentiel du bassin versant de Marololo. Cette mission a été diligentée par Varatraza, en collaboration avec des experts en hydrologie, avec pour objectif d’analyser les caractéristiques hydrologiques, topographiques et environnementales du bassin versant.`
   
     }    
     

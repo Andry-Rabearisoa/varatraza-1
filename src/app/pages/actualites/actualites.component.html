@@ -9,6 +9,7 @@
       style="cursor: pointer;"
     >
       <div class="realisation-content">
+  
         <video
           *ngIf="item.video"
           class="realisation-video fade-in"
@@ -17,18 +18,23 @@
           playsinline
           controls
         ></video>
-
+  
         <img
           *ngIf="!item.video && item.image"
           src="assets/{{ item.image }}"
           alt="Image réalisation {{ i + 1 }}"
           class="realisation-image fade-in"
         />
-
+  
+        <!-- Titre au-dessus de la description -->
+        <h3 class="realisation-title fade-in">{{ item.titre }}</h3>
+  
         <p class="realisation-text fade-in" [innerHTML]="item.description"></p>
+        
       </div>
     </div>
   </div>
+  
 
   <!-- Colonne droite : projets en vue -->
   <div class="projet-en-vue">
@@ -67,7 +73,8 @@
   <div class="modal-content" (click)="$event.stopPropagation()">
     <button class="modal-close-btn" (click)="closeModal()">✕</button>
 
-    <!-- Contenu de la modal : vidéo ou image -->
+    <h3 class="modal-title">{{ modalContent?.titre }}</h3>
+
     <video
       *ngIf="modalContent?.video"
       class="modal-video"
@@ -87,3 +94,4 @@
     <div class="modal-description" [innerHTML]="modalContent?.description"></div>
   </div>
 </div>
+

@@ -234,3 +234,10 @@ main {
   /* Police comme la page */
   font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
 }
+.realisation-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  color: #333;
+  margin: 8px 0 2px 0; /* marge supérieure = 8px, inférieure = 2px */
+}
