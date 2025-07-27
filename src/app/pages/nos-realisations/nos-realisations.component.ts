@@ -16,7 +16,7 @@ export class NosRealisationsComponent {
     }
     ,
     {
-      description: `Équipement d’éclairage public : distribution de plus de 200 lampadaires solaires au niveau des Fokontany dans le District de Mitsinjo, réalisée entre avril 2024 et mars 2025, dont le montant total s’élève à 40 000 000 ariary, soit environ 8 900 euros.`,
+      description: `Équipement d’éclairage public : distribution de plus de 200 lampadaires solaires au niveau des Fokontany dans le District de Mitsinjo, réalisée entre avril 2024 et mars 2025, pour un coût total de 40 000 000 ariary, soit environ 8 900 euros.`,
       image: 'image2RE.jpg'
     }
     ,
@@ -26,12 +26,12 @@ export class NosRealisationsComponent {
     }
     ,
     {
-      description: "Distribution des matériels, des effets et des équipements sportifs aux jeunes auprès des Fokontany dans le District de Mitsinjo, réalisée de mars 2024 à décembre 2024, pour un coût total de 15 000 ariary, soit environ 3,30 euros.",
+      description: "Distribution des matériels, effets et équipements sportifs aux jeunes des Fokontany dans le District de Mitsinjo, réalisée de mars 2024 à décembre 2024, pour un coût total de 15 000 000 ariary, soit environ 3 300 euros.",
       image: 'image4RE.jpg'
     }
     ,
     {
-      description: ` Mise en place d’un nouveau centre à Mitsinjo pour les examens de Baccalauréat de l’enseignement technique en juillet 2024, pour des dépenses s’élevant à 850 000 ariary, soit environ 190 euros.`,
+      description: `Mise en place d’un nouveau centre à Mitsinjo pour les examens de Baccalauréat de l’enseignement technique en juillet 2024, pour un coût total de 850 000 ariary, soit environ 190 euros`,
       image: 'image1.jpg'
     }
     ,
@@ -51,7 +51,7 @@ export class NosRealisationsComponent {
     }
     ,
     {
-      description: `Adduction d’eau potable au Fokontany Androhibe. Montant total pour la construction de ces puits : 35 000 000 ariary, soit environ 7 800 euros.`,
+      description: `Adduction d’eau potable via la construction de puits dans les Fokontany Anonibe, Namakia, Antanam-bao, Androtra, Ambararata, Ambarimaninga, Mahaditra, Antseza, et Androhibe. Le coût total des travaux est de 35 000 000 ariary, soit environ 7 000 euros.`,
       image: '1753430750970.jpg'
     }
 
