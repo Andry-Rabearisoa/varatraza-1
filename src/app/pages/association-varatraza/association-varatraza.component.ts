@@ -12,7 +12,7 @@ export class AssociationVaratrazaComponent implements AfterViewInit {
   membres = [
 
     { nom: 'NDRAMANORO Haritraina François', role: 'Secrétaire Général Administratif', photo: 'assets/general.jpg' },
-    { nom: 'DE GIRARD Martine Marie', role: 'Conseiller', photo: 'assets/martine.jpg' },
+    { nom: 'DE GIRARD Martine Marie', role: 'Conseillère', photo: 'assets/martine.jpg' },
     { nom: 'HOUSSEN Victor', role: 'Trésorier', photo: 'assets/hussen.jpg' }
   ];
 
