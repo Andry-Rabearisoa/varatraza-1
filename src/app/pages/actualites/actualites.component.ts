@@ -22,7 +22,7 @@ export class ActualitesComponent {
     {
 
       image: 'image2actu.jpg',
-      description: `Dans le district de Mitsinjo, une descente sur le terrain a été organisée pour réaliser les études de variantes en vue de la reconstruction du pont d'Ambararatabe, un ouvrage essentiel pour la connectivité locale. Cette mission, menée par les autorités et des experts en génie civil, vise à évaluer les conditions du site, analyser les contraintes techniques et environnementales, et proposer des solutions adaptées pour un pont durable et sécurisé.`
+      description: `Dans le district de Mitsinjo, une descente sur le terrain a été organisée pour réaliser les études de variantes en vue de la reconstruction du pont d'Ambararatabe, un ouvrage essentiel pour la connectivité locale. Cette mission, menée par les autorités et des experts en génie civil, vise à évaluer les conditions du site, analyser les contraintes techniques et environnementales.`
    
     }
     ,

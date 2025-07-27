@@ -8,10 +8,10 @@
       <p><strong>Objectifs :</strong></p>
       <ul>
         <li>Promouvoir le développement économique, social et culturel.</li>
-        <li>Préserver les patrimoines.</li>
-        <li>Protéger la biodiversité en accord avec la population locale.</li>
+        <li>Préservation des patrimoines.</li>
+        <li>Protection de l’environnement : protéger et sauvegarder les faunes et flores en adéquation avec la population riveraine.</li>
       </ul>
-      <p><strong>Sa zone d’influence</strong> est la province de Majunga et en priorité le District de Mitsinjo. Toutefois, elle peut être étendue dans tout le territoire national malgache.</p>
+      <p><strong>Sa zone d’influence</strong> est la province de Majunga et en priorité le District de Mitsinjo. Toutefois, elle peut être étendue dans tout le territoire national malgache.</p>
     </div>
     <div class="col-right spacer"></div>
   </div>
@@ -22,7 +22,7 @@
     <div class="col-right values">
       <h3>Nos valeurs</h3>
       <p>L’association « VARATRAZA » est indépendante de toute organisation politique ou confessionnelle. Elle accueille tous ceux qui adhèrent à ses statuts sans discrimination.</p>
-      <p>Elle garantit la liberté de conscience et veille au respect du principe d’égalité entre ses membres.</p>
+
     </div>
   </div>
 
@@ -35,30 +35,55 @@
   <div class="col-right spacer"></div>
 </div>
 
-<!-- Ligne 4 : Cartes à gauche / Présidente à droite -->
+<!-- Ligne 4 : Présidente + Vice-président en haut, puis membres en bas -->
 <div class="members-layout animate-fade">
-  <div class="member-cards">
-    <div class="card" *ngFor="let member of membres">
-      <div class="photo-container">
-        <img [src]="member.photo" [alt]="member.nom" class="photo" />
+  <!-- Bloc contenant les leaders + les membres -->
+  <div class="members-wrapper">
+    
+    <!-- Leaders : Présidente + Vice-Président -->
+    <div class="leaders">
+      <div class="president-card">
+        <div class="photo-container">
+          <img src="assets/pr.jpg" alt="Présidente" class="photo" />
+        </div>
+        <div class="info">
+          <p class="name">KALOPER Beby BUONO</p>
+          <p class="role">Présidente</p>
+        </div>
       </div>
-      <div class="info">
-        <p class="name">{{ member.nom }}</p>
-        <p class="role">{{ member.role }}</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="president-card">
-    <div class="photo-container">
-      <img src="assets/pr.jpg" alt="Présidente" class="photo" />
+      <div class="vice-card">
+        <div class="photo-container">
+          <img src="assets/rufin.jpg" alt="Vice-Président" class="photo" />
+        </div>
+        <div class="info">
+          <p class="name">LEBIRIA Rufin Tolojara</p>
+          <p class="role">Vice-Président</p>
+        </div>
+      </div>
     </div>
-    <div class="info">
-      <p class="name">KALOPER Beby BUONO</p>
-      <p class="role">Présidente</p>
+
+    <!-- Membres -->
+    <div class="member-cards">
+      <div class="card" *ngFor="let member of membres">
+        <div class="photo-container">
+          <img [src]="member.photo" [alt]="member.nom" class="photo" />
+        </div>
+        <div class="info">
+          <p class="name">{{ member.nom }}</p>
+          <p class="role">{{ member.role }}</p>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
+
+
+
+
+
+
 
 
 </div>

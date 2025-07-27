@@ -32,22 +32,26 @@ ul {
   list-style-type: disc;
 }
 
-/* Membres Layout : cartes à gauche, présidente à droite */
 .members-layout {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
 }
+
+
+
 
 /* Container des cartes membres */
 .member-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  flex: 1 1 60%;
-  min-width: 0;
+  justify-content: center;
 }
+
+
 
 /* Cartes membres */
 .card,
@@ -72,8 +76,10 @@ ul {
 
 /* Card du président avec couleur différente */
 .president-card {
-  background-color: #2c8c7a;  /* bleu-vert */
+  background-color: #2c8c7a;
+  margin-bottom: 2rem; /* ✅ espace sous la carte présidente */
 }
+
 
 /* Image ronde qui dépasse en haut */
 .photo-container {
@@ -150,7 +156,7 @@ ul {
 /* Texte "nos valeurs" */
 .values {
   margin-left: 6rem;
-  margin-top: -3rem;
+  margin-top: -4rem;
   max-width: 100%;
   word-wrap: break-word;
   font-family: inherit;
@@ -199,4 +205,37 @@ ul {
 
 .animate-fade.active {
   opacity: 1;
+}
+.leaders {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;   /* centre les cartes horizontalement */
+  width: 100%;               /* occupe toute la largeur */
+  margin-bottom: 2rem; /* ✅ Petit espace vertical entre leaders et membres */
+}
+
+.vice-card {
+  background-color: #8c5c2c; /* brun orangé ou couleur de ton choix */
+  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+}
+.members-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centre les enfants (leaders + members) */
+  justify-content: center;
+  margin: 0 auto;          /* ✅ centre horizontalement le bloc entier */
 }

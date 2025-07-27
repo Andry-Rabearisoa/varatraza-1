@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AssociationVaratrazaComponent implements AfterViewInit {
   membres = [
-    { nom: 'LEBIRIA Rufin Tolojara', role: 'Vice-président', photo: 'assets/rufin.jpg' },
+
     { nom: 'NDRAMANORO Haritraina François', role: 'Secrétaire Général Administratif', photo: 'assets/general.jpg' },
     { nom: 'DE GIRARD Martine Marie', role: 'Conseiller', photo: 'assets/martine.jpg' },
     { nom: 'HOUSSEN Victor', role: 'Trésorier', photo: 'assets/hussen.jpg' }
