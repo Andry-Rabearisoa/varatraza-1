@@ -12,7 +12,8 @@
           alt="Image réalisation {{ i + 1 }}"
           class="realisation-image fade-in"
         />
-        <p class="realisation-text fade-in">{{ item.description }}</p>
+        <p class="realisation-text fade-in" [innerHTML]="item.description"></p>
+
       </div>
     </div>
   </div>
@@ -39,6 +40,7 @@
       class="modal-image"
     />
 
-    <div class="modal-description">{{ modalContent?.description }}</div>
+    <div class="modal-description" [innerHTML]="modalContent?.description"></div>
+
   </div>
 </div>
