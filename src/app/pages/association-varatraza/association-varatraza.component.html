@@ -1,6 +1,6 @@
 <div class="association-container">
 
-  <!-- Ligne 1 : Qui sommes-nous (gauche, animation de gauche) -->
+  <!-- Ligne 1 : Qui sommes-nous -->
   <div class="row animate-left">
     <div class="col-left">
       <h2>Qui sommes-nous ?</h2>
@@ -16,74 +16,68 @@
     <div class="col-right spacer"></div>
   </div>
 
-  <!-- Ligne 2 : Nos valeurs (droite, animation de droite) -->
+  <!-- Ligne 2 : Nos valeurs -->
   <div class="row animate-right">
     <div class="col-left spacer"></div>
     <div class="col-right values">
       <h3>Nos valeurs</h3>
       <p>L’association « VARATRAZA » est indépendante de toute organisation politique ou confessionnelle. Elle accueille tous ceux qui adhèrent à ses statuts sans discrimination.</p>
-
     </div>
   </div>
 
-  <!-- Ligne 3 : Membres de bureau (gauche, animation fade) -->
-<!-- Ligne 3 : Membres de bureau (gauche) -->
-<div class="row animate-left">
-  <div class="col-left">
-    <h3>MEMBRES DE BUREAU DE L'ASSOCIATION VARATRAZA</h3>
-  </div>
-  <div class="col-right spacer"></div>
-</div>
-
-<!-- Ligne 4 : Présidente + Vice-président en haut, puis membres en bas -->
-<div class="members-layout animate-fade">
-  <!-- Bloc contenant les leaders + les membres -->
-  <div class="members-wrapper">
-    
-    <!-- Leaders : Présidente + Vice-Président -->
-    <div class="leaders">
-      <div class="president-card">
-        <div class="photo-container">
-          <img src="assets/pr.jpg" alt="Présidente" class="photo" />
-        </div>
-        <div class="info">
-          <p class="name">KALOPER Beby BUONO</p>
-          <p class="role">Présidente</p>
-        </div>
-      </div>
-
-      <div class="vice-card">
-        <div class="photo-container">
-          <img src="assets/rufin.jpg" alt="Vice-Président" class="photo" />
-        </div>
-        <div class="info">
-          <p class="name">LEBIRIA Rufin Tolojara</p>
-          <p class="role">Vice-Président</p>
-        </div>
-      </div>
+  <!-- Ligne 3 : Titre Membres de bureau -->
+  <div class="row animate-left">
+    <div class="row animate-left title-row">
+      <h3 class="section-title">MEMBRES DE BUREAU DE L'ASSOCIATION VARATRAZA</h3>
     </div>
+  </div>
 
-    <!-- Membres -->
-    <div class="member-cards">
-      <div class="card" *ngFor="let member of membres">
-        <div class="photo-container">
-          <img [src]="member.photo" [alt]="member.nom" class="photo" />
+  <!-- Ligne 4 : Organigramme -->
+  <div class="members-layout animate-fade">
+    <div class="members-wrapper">
+
+      <!-- Présidente et Vice-président verticalement -->
+      <div class="leaders-vertical">
+        <div class="president-card">
+          <div class="photo-container">
+            <img src="assets/pr.jpg" alt="Présidente" class="photo" />
+          </div>
+          <div class="info">
+            <p class="name">Madame KALOPER Beby BUONO</p>
+            <p class="role">Présidente</p>
+          </div>
         </div>
-        <div class="info">
-          <p class="name">{{ member.nom }}</p>
-          <p class="role">{{ member.role }}</p>
+
+        <div class="vice-card">
+          <div class="photo-container">
+            <img src="assets/rufin.jpg" alt="Vice-Président" class="photo" />
+          </div>
+          <div class="info">
+            <p class="name">Monsieur LEBIRIA Rufin Tolojara</p>
+            <p class="role">Vice-Président</p>
+          </div>
         </div>
       </div>
+
+      <!-- Membres -->
+      <div class="member-cards">
+        <div class="card" *ngFor="let member of membres">
+          <div class="photo-container">
+            <img [src]="member.photo" [alt]="member.nom" class="photo" />
+          </div>
+          <div class="info">
+            <p class="name">{{ member.nom }}</p>
+            <p class="role">{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bouton "Voir plus" -->
+      <div class="voir-plus-container">
+        <a routerLink="/organigramme-complet" class="voir-plus-button">Voir plus</a>
+      </div>
+
     </div>
-
   </div>
-</div>
-
-
-
-
-
-
-
 
 </div>

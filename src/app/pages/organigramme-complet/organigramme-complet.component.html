@@ -1,0 +1,43 @@
+<div class="association-container">
+
+    <h2 class="section-title">Organigramme complet de l'Association Varatraza</h2>
+  
+    <div class="members-layout">
+  
+      <div class="members-wrapper">
+  
+        <!-- Présidente et Vice-président -->
+        <div class="leaders-vertical">
+          <div *ngFor="let leader of membres | slice:0:2" 
+               [ngClass]="{'president-card': leader.role === 'Présidente', 'vice-card': leader.role === 'Vice-Président'}" 
+               class="card">
+            <div class="photo-container">
+              <img [src]="leader.photo" [alt]="leader.nom" class="photo" />
+            </div>
+            <div class="info">
+              <p class="name">{{ leader.nom }}</p>
+              <p class="role">{{ leader.role }}</p>
+            </div>
+          </div>
+        </div>
+  
+<!-- Autres membres -->
+<div class="member-cards">
+    <div *ngFor="let member of membres | slice:2" class="card member-card">
+      <div class="photo-container">
+        <img [src]="member.photo" [alt]="member.nom" class="photo" />
+      </div>
+      <div class="info">
+        <p class="name">{{ member.nom }}</p>
+        <p class="role">{{ member.role }}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+      </div>
+  
+    </div>
+  
+  </div>
+  

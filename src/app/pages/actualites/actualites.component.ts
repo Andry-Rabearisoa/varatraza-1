@@ -43,7 +43,7 @@ export class ActualitesComponent {
   projetEnVue : any[] =  [ {
     description: `- Finition des infrastructures de la Police Nationale (Commissariat Mitsinjo)<br>
     - Formation et fabrication de serviette hygiénique réutilisable<br>
-    - RÉHABILITATION et ouverture TRIBUNAL Mitsinjo<br>
+    - Réhabilitation et ouverture du tribunal de Mitsinjo<br>
     - Construction du lycée technique de Mitsinjo<br>
     - Construction Epp dans le Fokontany d'Amptisopitsoka<br>
     - Construction des routes : Katsepy-Mitsinjo<br>

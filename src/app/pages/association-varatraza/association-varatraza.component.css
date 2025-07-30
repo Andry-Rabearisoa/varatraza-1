@@ -1,22 +1,24 @@
+/* --- Structure générale --- */
 .association-container {
   background-color: #3c412a;
   color: white;
   padding: 2rem;
-  font-family: 'Geomanist', 'Poppins', Arial, sans-serif; /* Uniforme ici */
+  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  margin: 0 auto;
 }
 
-/* Lignes (deux colonnes) */
+/* --- Grille de lignes --- */
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 2rem;
-  opacity: 0;              /* Initialement invisibles pour l’animation */
+  opacity: 0;
   transform: translateX(0);
   transition: all 0.8s ease;
 }
 
-/* Colonnes */
-.col-left, .col-right {
+.col-left,
+.col-right {
   flex: 1;
   min-width: 300px;
 }
@@ -26,62 +28,144 @@
   height: 2rem;
 }
 
-/* Listes */
+/* --- Titres --- */
+.association-container h2,
+.association-container h3 {
+  color: #2c8c7a;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-family: inherit;
+}
+
+/* Titre de section spécifique (membres de bureau) */
+.row .col-left h3 {
+  color: #87CEEB;
+  text-align: center;
+  width: 100%;
+}
+
+/* Titre centré personnalisé */
+.title-row {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #87CEEB;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+/* --- Textes importants --- */
+.association-container strong {
+  color: #c8b88b;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+/* --- Listes --- */
 ul {
   padding-left: 1.2rem;
   list-style-type: disc;
+  font-family: inherit;
 }
 
+/* --- Bloc des valeurs --- */
+.values {
+  margin-left: 6rem;
+  margin-top: -4rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-family: inherit;
+}
+
+/* --- Organigramme --- */
 .members-layout {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+  font-family: inherit;
 }
 
+.members-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  font-family: inherit;
+}
 
+/* Présidente & Vice-président en colonne */
+.leaders-vertical {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 1000px;
+  font-family: inherit;
+}
 
-
-/* Container des cartes membres */
+/* Membres de bureau en grille */
 .member-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  font-family: inherit;
 }
 
-
-
-/* Cartes membres */
+/* --- Cartes (Présidente, Vice-président, Membres) */
 .card,
-.president-card {
-  background-color: #7a5c5c;
+.president-card,
+.vice-card {
   border-radius: 12px;
-  width: 150px;
+  width: calc((100% - 3rem) / 4);
+  max-width: 220px;
+  min-width: 140px;
   height: 150px;
   padding: 1rem 0;
   position: relative;
   text-align: center;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   overflow: visible;
-  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  font-family: inherit;
 }
 
-/* Card du président avec couleur différente */
+/* Couleurs spécifiques */
 .president-card {
   background-color: #2c8c7a;
-  margin-bottom: 2rem; /* ✅ espace sous la carte présidente */
 }
 
+.vice-card {
+  background-color: #8c5c2c;
+}
 
-/* Image ronde qui dépasse en haut */
+.card {
+  background-color: #e7b8a2;
+}
+
+/* --- Photos --- */
 .photo-container {
   width: 120px;
   height: 120px;
@@ -105,77 +189,35 @@ ul {
   border-radius: 50%;
 }
 
-/* Texte en bas */
+/* --- Infos sous photo --- */
 .info {
   margin-top: 80px;
   width: 90%;
-  background: transparent;
-  border-radius: 6px;
-  padding: 0;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
   font-family: inherit;
-
-  /* Ajouts pour éviter les débordements */
-  overflow-wrap: break-word; /* coupe les mots trop longs */
-  word-wrap: break-word;     /* ancien mais compatible */
-  hyphens: auto;             /* coupe les mots avec des tirets si possible */
-  overflow: hidden;          /* cache tout ce qui dépasse */
-  text-overflow: ellipsis;   /* ajoute "..." si texte trop long */
-  white-space: normal;       /* autorise le retour à la ligne */
 }
 
 .name {
   font-weight: bold;
   font-size: 1rem;
   margin: 0;
+  font-family: inherit;
 }
 
 .role {
   font-style: italic;
   font-size: 0.85rem;
   margin: 0;
-}
-
-/* Titres */
-.association-container h2,
-.association-container h3 {
-  color: #2c8c7a; /* bleu-vert */
-  font-weight: bold;
-  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
-}
-
-/* Mots-clés (gras) */
-.association-container strong {
-  color: #c8b88b;
-  font-weight: bold;
-}
-
-/* Texte "nos valeurs" */
-.values {
-  margin-left: 6rem;
-  margin-top: -4rem;
-  max-width: 100%;
-  word-wrap: break-word;
   font-family: inherit;
 }
 
-/* Titre spécifique membres de bureau en bleu ciel */
-.row .col-left h3 {
-  color: #87CEEB; /* bleu ciel */
-  font-weight: bold;
-}
-
-/* --- Animations ---
-
-  1) Entrée depuis la gauche
-  2) Entrée depuis la droite
-  3) Fade simple (apparition)
-
-*/
-
+/* --- Animations --- */
 .animate-left {
   opacity: 0;
   transform: translateX(-50px);
@@ -206,36 +248,27 @@ ul {
 .animate-fade.active {
   opacity: 1;
 }
-.leaders {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;   /* centre les cartes horizontalement */
-  width: 100%;               /* occupe toute la largeur */
-  margin-bottom: 2rem; /* ✅ Petit espace vertical entre leaders et membres */
-}
 
-.vice-card {
-  background-color: #8c5c2c; /* brun orangé ou couleur de ton choix */
-  border-radius: 12px;
-  width: 150px;
-  height: 150px;
-  padding: 1rem 0;
-  position: relative;
+/* --- Bouton "Voir plus" --- */
+.voir-plus-container {
+  margin-top: 2rem;
   text-align: center;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: visible;
-  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  width: 100%;
 }
-.members-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* centre les enfants (leaders + members) */
-  justify-content: center;
-  margin: 0 auto;          /* ✅ centre horizontalement le bloc entier */
+
+.voir-plus-button {
+  background-color: #2c8c7a;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.voir-plus-button:hover {
+  background-color: #246f63;
 }
