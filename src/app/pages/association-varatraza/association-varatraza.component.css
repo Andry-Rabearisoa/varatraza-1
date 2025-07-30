@@ -310,3 +310,22 @@ ul {
   h2, h3 {
     font-size: 1.2rem;
   }
+  @media (max-width: 600px) {
+    .spacer {
+      min-width: 0 !important;
+      width: 0 !important;
+      visibility: hidden;
+    }
+  
+    .col-left, .col-right {
+      flex: 1 1 100%;
+      min-width: 0; /* permet aux colonnes de se réduire */
+    }
+  
+    /* Optionnel : dans la ligne 2, tu peux forcer .col-right à 100% */
+    .row.animate-right .col-right {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
+  
