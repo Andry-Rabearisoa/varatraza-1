@@ -49,4 +49,16 @@
   .arrow.right {
     right: 10px;
   }
+  @media (max-width: 600px) {
+    .carousel img {
+      flex: 0 0 100%;   /* 1 image visible pleine largeur */
+      max-width: 100%;
+      aspect-ratio: 4 / 3;
+    }
+  
+    .arrow {
+      font-size: 2rem;
+      padding: 6px;
+    }
+  }
   

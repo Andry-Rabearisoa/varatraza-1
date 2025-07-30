@@ -8,11 +8,11 @@
     </button>
 
     <ul class="nav-links" [ngClass]="{ 'open': menuOpen }">
-      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a></li>
-      <li><a routerLink="/association-varatraza" routerLinkActive="active">Association Varatraza</a></li>
-      <li><a routerLink="/nos-realisations" routerLinkActive="active">Nos Réalisations</a></li>
-      <li><a routerLink="/actualites" routerLinkActive="active">Actualités</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="menuOpen = false">Accueil</a></li>
+      <li><a routerLink="/association-varatraza" routerLinkActive="active" (click)="menuOpen = false">Association Varatraza</a></li>
+      <li><a routerLink="/nos-realisations" routerLinkActive="active" (click)="menuOpen = false">Nos Réalisations</a></li>
+      <li><a routerLink="/actualites" routerLinkActive="active" (click)="menuOpen = false">Actualités</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="menuOpen = false">Contact</a></li>
     </ul>
   </div>
 

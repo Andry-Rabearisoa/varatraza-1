@@ -272,3 +272,41 @@ ul {
 .voir-plus-button:hover {
   background-color: #246f63;
 }
+/* Tablettes et écrans moyens */
+@media (max-width: 600px) {
+  .card,
+  .president-card,
+  .vice-card {
+    width: 80%;
+    max-width: none;
+    min-width: auto;
+    height: 120px; /* réduit de 150px à 120px par exemple */
+  }
+
+  .photo-container {
+    width: 90px;
+    height: 90px;
+    top: -30px;
+  }
+
+  .info {
+    margin-top: 50px; /* réduit aussi le margin-top pour mieux coller */
+  }
+
+  /* ... le reste inchangé ... */
+}
+
+
+
+  .voir-plus-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }

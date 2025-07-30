@@ -241,3 +241,50 @@ main {
   color: #333;
   margin: 8px 0 2px 0; /* marge supérieure = 8px, inférieure = 2px */
 }
+/* --- Responsive mobile (max-width: 600px) --- */
+@media (max-width: 600px) {
+
+  .page-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  /* Grille réalisations : passe en 1 colonne */
+  .realisations-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Colonne droite projet en vue : pleine largeur */
+  .projet-en-vue {
+    width: 100% !important;
+    position: relative; /* Plus sticky en mobile */
+    top: auto;
+    padding: 15px;
+  }
+
+  /* Vidéo/image dans projet en vue */
+  .projet-en-vue .realisation-video,
+  .projet-en-vue .realisation-image {
+    max-height: 180px;
+  }
+
+  /* Boîtes réalisations - réduire un peu la hauteur max */
+  .realisation-video {
+    max-height: 250px;
+  }
+  
+  .realisation-image {
+    height: 150px;
+  }
+
+  /* Texte un peu plus petit */
+  .realisation-text {
+    font-size: 0.9rem;
+  }
+
+  /* Modal s’adapte déjà bien, pas besoin de changer */
+
+}
