@@ -1,99 +1,163 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3E5724; /* fond vert */
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
-    height: 80px;
-    overflow: visible;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3E5724; /* fond vert */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  height: 80px;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-right .social-icons {
+  background-color: white; /* fond blanc juste ici */
+  height: 50px;
+  margin-right: -20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  height: 40px;         /* hauteur fixe */
+  overflow: visible;    /* pour que les éléments qui dépassent restent visibles */
+  line-height: 40px;    /* pour centrer verticalement le texte si besoin */
+  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  width: 150px;    /* largeur agrandie */
+  height: 90px;    /* hauteur agrandie */
+  position: relative;
+  top: 15px;       /* garde le décalage vertical */
+  margin-right: 30px;
+  object-fit: contain; /* pour garder la proportion de l’image */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #a5d6a7; /* vert clair au survol et actif */
+}
+
+.navbar-right .social-icons {
+  background-color: white;
+  padding: 5px 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.navbar-right .social-icons a {
+  color: #0077b5; /* Bleu LinkedIn par défaut */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-right .social-icons a:nth-child(2) {
+  color: #1877f2; /* Bleu Facebook */
+}
+
+.navbar-right .social-icons a:hover {
+  color: #005582; /* Un bleu plus foncé au hover */
+}
+
+.navbar-right a:hover {
+  color: #a5d6a7; /* vert clair au survol */
+}
+
+/* === Responsive === */
+
+/* Bouton hamburger caché par défaut */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Responsive pour écrans <= 768px */
+@media (max-width: 768px) {
+  /* Affiche le bouton hamburger */
+  .menu-toggle {
+    display: block;
   }
-  
-  .navbar-right .social-icons {
-    background-color: white; /* fond blanc juste ici */
-   
-    height: 50px;
-    margin-right: -20px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
-  }
-  
-  .navbar {
-    height: 40px;         /* hauteur fixe */
-    overflow: visible;    /* pour que les éléments qui dépassent restent visibles */
-    line-height: 40px;    /* pour centrer verticalement le texte si besoin */
-    font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .logo {
-    width: 120px;       /* largeur plus large */
-    height: auto;       /* hauteur proportionnelle */
-    position: relative;
-    top: 10px;          /* dépassement en bas */
-    margin-right: 20px;
-  }
-  
-  
-  
+
+  /* Menu en colonne caché par défaut */
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    display: none;
+    background-color: #3E5724;
+    position: absolute;
+    top: 80px; /* hauteur navbar */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
   }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
 
-  }
-  
-  .nav-links li a:hover,
-  .nav-links li a.active {
-    color: #a5d6a7; /* vert clair au survol et actif */
-  }
-  
-  .navbar-right .social-icons {
-    background-color: white;
-    padding: 5px 10px;
-
+  /* Affiche le menu quand il a la classe open */
+  .nav-links.open {
     display: flex;
-    gap: 15px;
-    align-items: center;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
   }
-  
-  .navbar-right .social-icons a {
-    color: #0077b5; /* Bleu LinkedIn par défaut */
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+
+  /* Chaque lien en bloc avec un peu de padding */
+  .nav-links li {
+    padding: 10px 0;
+    text-align: center;
   }
-  
-  .navbar-right .social-icons a:nth-child(2) {
-    color: #1877f2; /* Bleu Facebook */
+
+  /* Empile navbar en colonne */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto; /* pour s’adapter au menu déroulé */
   }
-  
-  .navbar-right .social-icons a:hover {
-    color: #005582; /* Un bleu plus foncé au hover */
+
+  /* La partie gauche garde flex aligné */
+  .navbar-left {
+    flex-wrap: nowrap;
   }
-  
-  
-  .navbar-right a:hover {
-    color: #a5d6a7; /* vert clair au survol */
+
+  /* Cacher les icônes sociales en responsive */
+  .navbar-right {
+    display: none;
   }
-  
+
+  /* Logo prend toute la hauteur de la navbar en responsive */
+  .logo {
+    height: 80px;  /* même hauteur que la navbar */
+    width: auto;   /* largeur automatique pour garder proportions */
+    top: 0;        /* pas de décalage vertical */
+    margin-right: 10px;
+  }
+}

@@ -11,19 +11,16 @@
   justify-content: space-between;
   gap: 40px;
   max-width: 1200px;
-  padding-bottom: -5px;
   margin: 0 auto;
-  padding-left: 100px; /* 👈 Décalage à droite */
+  padding-left: 100px; /* Décalage à droite */
   align-items: stretch;
 }
-
 
 /* Colonne gauche plus large, sans margin-left */
 .footer-main {
   flex: 1 1 55%;
   min-width: 320px;
   margin-top: 1px;
-
 }
 
 .footer-contact {
@@ -84,17 +81,19 @@
   text-decoration: none;
 }
 
-/* Responsive */
+/* === Responsive === */
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     gap: 30px;
     align-items: stretch;
+    padding-left: 20px; /* Réduire décalage sur petit écran */
   }
 
   .footer-main,
   .footer-contact {
     flex: 1 1 100%;
+    margin-left: 0 !important; /* Annule margin-left négative */
   }
 
   .footer-buttons {

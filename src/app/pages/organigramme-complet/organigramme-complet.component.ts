@@ -16,7 +16,7 @@ export class OrganigrammeCompletComponent {
     { nom: 'Monsieur NDRAMANORO Haritraina François', role: 'Secrétaire Général Administratif', photo: 'assets/general.jpg' },
     { nom: 'Madame DE GIRARD Martine Marie', role: 'Conseillère', photo: 'assets/martine.jpg' },
     { nom: 'Monsieur HOUSSEN Victor', role: 'Trésorier', photo: 'assets/hussen.jpg' },
-    { nom: 'Monsieur Andry Rabearisoa', role: '--', photo: 'assets/Andry.jpg' }
+    { nom: 'Monsieur Andry Rabearisoa', role: 'Community managers', photo: 'assets/Andry.jpg' }
   ];
   
 
