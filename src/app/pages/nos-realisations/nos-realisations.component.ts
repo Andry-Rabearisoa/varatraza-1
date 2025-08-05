@@ -33,7 +33,7 @@ export class NosRealisationsComponent {
     },
     {
       description: `Don de pirogues métalliques pour soutenir les communautés de Mitsinjo<br>
-      En novembre 2024, l’Association Varatraza, en collaboration avec le député du district de Mitsinjo, a offert deux pirogues métalliques aux communautés locales. Cette initiative vise à renforcer l’accès aux voies navigables, faciliter les déplacements et soutenir les activités économiques des populations riveraines, contribuant ainsi au développement durable de Mitsinjo.<br>
+      En novembre 2024, l’Association Varatraza, en collaboration avec le Député du district de Mitsinjo, a offert deux pirogues métalliques aux communautés locales. Cette initiative vise à renforcer l’accès aux voies navigables, faciliter les déplacements et soutenir les activités économiques des populations riveraines, contribuant ainsi au développement durable de Mitsinjo.<br>
       Bénéficiaires : Les fokontany de Bemahazaka et la commune rurale de Bekipay.<br>
       Coût : 14 000 000 ariary, équivalent à 2 917 euros.`,
         image: 'E36ABD53.png'
