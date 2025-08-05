@@ -11,7 +11,7 @@ export class OrganigrammeCompletComponent {
 
   // Tous les membres, incluant Présidente, Vice-Président et les autres membres
   membres = [
-    { nom: 'Madame KALOPER Beby BUONO', role: 'Présidente', photo: 'assets/pr.jpg' },
+    { nom: 'Madame KALOPER BUENO Beby', role: 'Présidente', photo: 'assets/pr.jpg' },
     { nom: 'Monsieur LEBIRIA Rufin Tolojara', role: 'Vice-Président', photo: 'assets/rufin.jpg' },
     { nom: 'Monsieur NDRAMANORO Haritraina François', role: 'Secrétaire Général Administratif', photo: 'assets/general.jpg' },
     { nom: 'Madame DE GIRARD Martine Marie', role: 'Conseillère', photo: 'assets/martine.jpg' },

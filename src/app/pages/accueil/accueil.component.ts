@@ -1,8 +1,9 @@
 import { AfterViewInit, ElementRef, Component } from '@angular/core';
-
+import { RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
+  imports: [ RouterLink], // <-- ajoute CommonModule ici
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements AfterViewInit {

@@ -32,6 +32,10 @@ body, html {
   
     /* Ajout transition pour effet smooth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 510px; /* Hauteur fixe */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   /* Au survol, on agrandit un peu la boîte et on augmente l'ombre */
@@ -59,6 +63,7 @@ body, html {
         margin: 0;
     font-size: 1rem;
     line-height: 1.4;
+    
 
   }
   
@@ -177,7 +182,7 @@ body, html {
   .modal-video,
   .modal-image {
     max-width: 100%;
-    max-height: 60vh;
+    max-height: 40vh;
     border-radius: 10px;
     margin-bottom: 15px;
   }

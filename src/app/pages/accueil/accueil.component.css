@@ -22,7 +22,8 @@ body, html {
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2); /* plus clair */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,6 +236,9 @@ body, html {
 }
 
 .footer-title {
+  position: relative;
+  top: -40px;              /* remonte le titre vers le haut */
+  margin-bottom: 20px;     /* espace en bas du titre */
   text-align: center;
   font-size: 28px;
   font-weight: bold;
@@ -544,3 +548,65 @@ body, html {
 
 
 
+.image-container {
+  width: 100%;
+  max-width: 90vw;     /* ✅ largeur maximale plus grande */
+  margin: -180px auto 20px;
+  margin-left: 90px;      /* pousse vers la droite */
+  padding: 1px;
+}
+
+
+
+.titre-principal-img {
+  width: 100%;          /* L’image remplit son conteneur */
+  height: auto;         /* Hauteur proportionnelle */
+  display: block;
+  object-fit: contain;  /* L’image garde ses proportions */
+
+  
+}
+.overlay {
+  display: flex;
+  flex-direction: column; /* empile verticalement */
+  align-items: center;    /* centre horizontalement */
+}
+.content {
+  position: absolute;
+  top: 230px; /* ajuste selon ton besoin */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.voir-plus-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  margin-top: 40px;         /* espace au-dessus */
+}
+
+.voir-plus-button {
+  background-color: #FFD54F;
+  color: #333;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Geomanist', 'Poppins', Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.voir-plus-button:hover {
+  background-color: #e6c044;
+}
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-link:hover .footer-section {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}

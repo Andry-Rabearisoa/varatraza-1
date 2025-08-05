@@ -1,17 +1,18 @@
 <!-- SECTION 1 : déjà existante -->
 <div class="accueil-container">
-  
-    <div class="overlay">
-
-      <div class="content">
-        <div class="titre-principal">VARATRAZA</div> <!-- Ajouté ici -->
-        <h1>Ensemble bâtissons un avenir meilleur</h1>
-        <p id="typed-text">Rejoignez-nous pour soutenir des projets qui changent des vies</p>
-        <a href="/assets/rapport-activite.pdf" class="btn-rapport" target="_blank">Rapport d’activité</a>
-
-      </div>
+  <div class="overlay">
+    <div class="image-container">
+      <img src="/assets/varatraza.png" alt="VARATRAZA Logo" class="titre-principal-img" />
+    </div>
+    <div class="content">
+      <h1>Ensemble bâtissons un avenir meilleur</h1>
+      <p id="typed-text">Rejoignez-nous pour soutenir des projets qui changent des vies</p>
+      <a href="/assets/rapport-activite.pdf" class="btn-rapport" target="_blank">Rapport d’activité</a>
     </div>
   </div>
+</div>
+
+
   
   <!-- SECTION 2 : objectifs + mot de la présidente -->
   <div class="section2-objectifs">
@@ -87,23 +88,30 @@
         <h3>Bénéficiaires</h3>
       </div>
     </div>
-    <div class="footer-section">
+  
+    <a routerLink="/organigramme-complet" class="footer-section footer-link">
       <div class="circle-number" data-target="50">0</div>
       <div class="text-wrapper">
         <h3>Membres actifs</h3>
       </div>
-    </div>
-    <div class="footer-section">
+    </a>
+  
+    <a routerLink="/nos-realisations" class="footer-section footer-link">
       <div class="circle-number" data-target="9">0</div>
       <div class="text-wrapper">
         <h3>Projets achevés</h3>
       </div>
-    </div>
-    <div class="footer-section">
+    </a>
+  
+    <a routerLink="/actualites" class="footer-section footer-link">
       <div class="circle-number" data-target="3">0</div>
       <div class="text-wrapper">
         <h3>Projets en cours</h3>
       </div>
-    </div>
+    </a>
+  </div>
+  
+  <div class="voir-plus-container">
+    <a routerLink="/nos-realisations" class="voir-plus-button">Voir plus</a>
   </div>
 </footer>

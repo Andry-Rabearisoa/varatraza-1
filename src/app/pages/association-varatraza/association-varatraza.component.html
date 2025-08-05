@@ -5,79 +5,91 @@
     <div class="col-left">
       <h2>Qui sommes-nous ?</h2>
       <p><strong>L’Association Varatraza</strong> est une plateforme qui rassemble des personnalités engagées pour un développement équilibré et durable à Madagascar.</p>
+      <p><strong>Zone d'influence </strong> est la province de Majunga et en priorité le District de Mitsinjo. </p>
+
       <p><strong>Objectifs :</strong></p>
       <ul>
-        <li>Promouvoir le développement économique, social et culturel.</li>
-        <li>Préservation des patrimoines.</li>
-        <li>Protection de l’environnement : protéger et sauvegarder les faunes et flores en adéquation avec la population riveraine.</li>
+        <li>
+          <strong>Promouvoir le développement économique, social et culturel :</strong>
+          Le district de Mitsinjo, territoire riche en potentiel, est freiné par son enclavement, un obstacle majeur à son essor. Pour libérer ces opportunités, il est urgent d’entreprendre des actions concrètes. Des projets structurants, tels que la reconstruction des axes routiers pour désenclaver la région et la réhabilitation des infrastructures essentielles (écoles, centres de santé, accès à l’eau potable et électricité), doivent mobiliser une dynamique collective. Autorités locales, partenaires techniques et financiers, ainsi que l’ensemble de la communauté de Mitsinjo doivent unir leurs efforts pour garantir le succès de ces initiatives et bâtir un avenir prospère.
+        </li>
+    
+        <li>
+          <strong>Préservation des patrimoines :</strong>
+          Valoriser le patrimoine exceptionnel de Mitsinjo, l’un des rares territoires guidés par une reine qui perpétue une tradition de transmission exclusivement féminine, en célébrant cette culture comme un éloge de la femme, symbole de la force et de la résilience de notre communauté.
+        </li>
+    
+        <li>
+          <strong>Protection de l’environnement :</strong>
+          Préserver la faune et la flore : Protéger et sauvegarder la biodiversité unique de Mitsinjo en collaborant étroitement avec les populations riveraines pour promouvoir des pratiques durables et respectueuses de l’environnement.<br><br>
+    
+          Lutter contre la déforestation massive : Mettre fin à l’exploitation excessive du bois de chauffe et du raphia en instaurant des programmes de gestion durable des ressources naturelles, incluant des initiatives de reboisement pour restaurer les écosystèmes dégradés.<br><br>
+    
+          Sensibiliser et mobiliser la communauté : Engager les habitants de Mitsinjo, en partenariat avec les autorités locales et les organisations environnementales, dans des actions concrètes de conservation, telles que des campagnes de reboisement et des alternatives énergétiques pour réduire la dépendance au bois de chauffe.<br><br>
+    
+          Renforcer les capacités locales : Former les populations riveraines aux techniques de gestion durable des ressources, tout en soutenant des projets économiques alternatifs pour limiter la surexploitation du raphia et préserver l’équilibre écologique du district.
+        </li>
       </ul>
-      <p><strong>Sa zone d’influence</strong> est la province de Majunga et en priorité le District de Mitsinjo. Toutefois, elle peut être étendue dans tout le territoire national malgache.</p>
-    </div>
-    <div class="col-right spacer"></div>
+    
   </div>
+    
 
-  <!-- Ligne 2 : Nos valeurs -->
-  <div class="row animate-right">
-    <div class="col-left spacer"></div>
-    <div class="col-right values">
-      <h3>Nos valeurs</h3>
-      <p>L’association « VARATRAZA » est indépendante de toute organisation politique ou confessionnelle. Elle accueille tous ceux qui adhèrent à ses statuts sans discrimination.</p>
-    </div>
-  </div>
+
 
   <!-- Ligne 3 : Titre Membres de bureau -->
-  <div class="row animate-left">
+  <div class="members-box">
     <div class="row animate-left title-row">
-      <h3 class="section-title">MEMBRES DE BUREAU DE L'ASSOCIATION VARATRAZA</h3>
+      <div class="section-title">
+        <h2>MEMBRES DE BUREAU DE L'ASSOCIATION VARATRAZA</h2>
+      </div>
+    </div>
+  
+    <!-- Ligne 4 : Organigramme -->
+    <div class="members-layout animate-fade">
+      <div class="members-wrapper">
+  
+        <!-- Présidente et Vice-président verticalement -->
+        <div class="leaders-vertical">
+          <div class="president-card">
+            <div class="photo-container">
+              <img src="assets/pr.jpg" alt="Présidente" class="photo" />
+            </div>
+            <div class="info">
+              <p class="name">Madame KALOPER BUENO Beby</p>
+              <p class="role">Présidente</p>
+            </div>
+          </div>
+  
+          <div class="vice-card">
+            <div class="photo-container">
+              <img src="assets/rufin.jpg" alt="Vice-Président" class="photo" />
+            </div>
+            <div class="info">
+              <p class="name">Monsieur LEBIRIA Rufin Tolojara</p>
+              <p class="role">Vice-Président</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Membres -->
+        <div class="member-cards">
+          <div class="card" *ngFor="let member of membres">
+            <div class="photo-container">
+              <img [src]="member.photo" [alt]="member.nom" class="photo" />
+            </div>
+            <div class="info">
+              <p class="name">{{ member.nom }}</p>
+              <p class="role">{{ member.role }}</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Bouton "Voir plus" -->
+        <div class="voir-plus-container">
+          <a routerLink="/organigramme-complet" class="voir-plus-button">Voir l’organigramme complet</a>
+        </div>
+  
+      </div>
     </div>
   </div>
-
-  <!-- Ligne 4 : Organigramme -->
-  <div class="members-layout animate-fade">
-    <div class="members-wrapper">
-
-      <!-- Présidente et Vice-président verticalement -->
-      <div class="leaders-vertical">
-        <div class="president-card">
-          <div class="photo-container">
-            <img src="assets/pr.jpg" alt="Présidente" class="photo" />
-          </div>
-          <div class="info">
-            <p class="name">Madame KALOPER Beby BUONO</p>
-            <p class="role">Présidente</p>
-          </div>
-        </div>
-
-        <div class="vice-card">
-          <div class="photo-container">
-            <img src="assets/rufin.jpg" alt="Vice-Président" class="photo" />
-          </div>
-          <div class="info">
-            <p class="name">Monsieur LEBIRIA Rufin Tolojara</p>
-            <p class="role">Vice-Président</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Membres -->
-      <div class="member-cards">
-        <div class="card" *ngFor="let member of membres">
-          <div class="photo-container">
-            <img [src]="member.photo" [alt]="member.nom" class="photo" />
-          </div>
-          <div class="info">
-            <p class="name">{{ member.nom }}</p>
-            <p class="role">{{ member.role }}</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bouton "Voir plus" -->
-      <div class="voir-plus-container">
-        <a routerLink="/organigramme-complet" class="voir-plus-button">Voir l’organigramme complet </a>
-      </div>
-
-    </div>
-  </div>
-
-</div>
+  

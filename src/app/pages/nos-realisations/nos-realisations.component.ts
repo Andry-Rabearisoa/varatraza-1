@@ -26,25 +26,28 @@ export class NosRealisationsComponent {
       description: `Distribution de matériels, d’effets et d’équipements sportifs aux jeunes auprès des Fokontany dans le district de Mitsinjo.<br>Période : de mars 2024 à décembre 2024<br>Coût : 15 000 000 ariary, soit 3 125 euros.`,
       image: 'image4RE.jpg'
     },
-    {
-      description: `Mise en place d’un nouveau centre à Mitsinjo pour les examens du baccalauréat de l’enseignement technique en juillet 2024.<br>Dépenses : 850 000 ariary, soit  177 euros.`,
-      image: 'image1.jpg'
-    },
+
     {
       description: `Aide financière d’un montant de 3 500 000 ariary par fokontany dans le District de Mitsinjo.<br>Bénéficiaires : 58 Fokontany<br>Motifs : financement de diverses activités axées sur le développement au sein des fokontany.<br>Coût de l’aide en totalité : 28 000 000 ariary, soit 5 600 euros.`,
       image: '1753430901216.jpg'
     },
     {
-      description: `Dons de deux pirogues métalliques en novembre 2024.<br>Bénéficiaires : Fokontany de Bemahazaka et la Commune rurale de Bekipay.<br>Coût : 14 000 000 ariary, soit environ 2 917 euros.`,
-      image: 'E36ABD53.png'
+      description: `Don de pirogues métalliques pour soutenir les communautés de Mitsinjo<br>
+      En novembre 2024, l’Association Varatraza, en collaboration avec le député du district de Mitsinjo, a offert deux pirogues métalliques aux communautés locales. Cette initiative vise à renforcer l’accès aux voies navigables, faciliter les déplacements et soutenir les activités économiques des populations riveraines, contribuant ainsi au développement durable de Mitsinjo.<br>
+      Bénéficiaires : Les fokontany de Bemahazaka et la commune rurale de Bekipay.<br>
+      Coût : 14 000 000 ariary, équivalent à 2 917 euros.`,
+        image: 'E36ABD53.png'
     },
     {
       description: `Dons alimentaires pour les communes de Namakia, Mitsinjo et Katsepy en mars 2025.<br>Montant total des dons : 100 000 000 ariary, soit 20 833 euros.`,
       image: 'voria.jpg'
     },
     {
-      description: `Adduction d’eau potable via la construction des puits pour les Fokontany Anonibe, Namakia, Antanam-bao, Androtra, Ambararata, Ambarimaninga, Mahaditra, Antseza, et Androhibe.<br>Le coût total des travaux : 35 000 000 ariary, soit 7 000 euros.`,
-      image: '1753430750970.jpg'
+      description: `Construction de dix puits pour améliorer l’accès à l’eau potable à Mitsinjo<br>
+      En collaboration avec les autorités locales et les élus du district de Mitsinjo, un projet de construction de dix puits a été lancé pour répondre aux besoins en eau potable des communautés locales.<br>
+      Bénéficiaires : Les fokontany d’Anonibe, Namakia, Antanambao, Androtra, Ambararata, Ambarimaninga, Mahaditra, Antseza, Androhibe et un dixième fokontany à confirmer.<br>
+      Coût total : 50 000 000 ariary, soit environ 7 000 euros.`,
+       image: '1753430750970.jpg'
     }
   ];
   

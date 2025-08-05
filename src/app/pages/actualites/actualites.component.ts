@@ -30,9 +30,18 @@ export class ActualitesComponent {
     {
    image: '1753431582193.jpg',
    titre:'Périmètre irrigué d’Antseza',
-   description: `Une descente préliminaire s’est tenue à Antseza, au mois de juin, afin d’identifier le potentiel du bassin versant de Marololo. Cette mission a été diligentée par Varatraza, en collaboration avec des experts en hydrologie, avec pour objectif d’analyser les caractéristiques hydrologiques, topographiques et environnementales du bassin versant.`
+   description: `En juin 2025, une mission préliminaire a été menée à Antseza, dans le district de Mitsinjo, pour évaluer le potentiel du bassin versant de Marololo. Pilotée par l’Association Varatraza en collaboration avec des experts en hydrologie, cette initiative a visé à analyser les caractéristiques hydrologiques, topographiques et environnementales du site. Cette étude constitue une étape clé pour identifier des solutions durables de gestion de l’eau, renforcer les infrastructures hydrauliques et soutenir le développement socio-économique des communautés locales, tout en préservant l’écosystème unique de Mitsinjo.`
   
-    }    
+    },
+    {
+      image: 'actu5.jpg',
+      titre:'Soutien aux travaux HIMO à Antseza : don de ciment pour la construction de batardeaux',
+      description: `Dans le cadre de travaux préliminaires de type HIMO (Haute Intensité de Main-d’Œuvre), la commune d’Antseza, dans le district de Mitsinjo, a organisé des activités de terrassement et de curage pour soutenir les infrastructures locales. L’Association Varatraza a contribué à cette initiative par un don de 200 sacs de ciment, permettant la construction de batardeaux en sacs de terre. Ce projet, mobilisant la main-d’œuvre locale, vise à renforcer les infrastructures hydrauliques, à améliorer la gestion des ressources en eau et à soutenir le développement socio-économique d’Antseza, tout en consolidant l’engagement communautaire.
+      Coût total du don : 300 000 ariary pour l’acquisition des 200 sacs de ciment.
+      `
+     
+       }
+    
     
   ];
 

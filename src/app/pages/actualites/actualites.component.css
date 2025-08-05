@@ -38,10 +38,10 @@ main {
 
 .realisation-video {
   width: 100%;
-  max-height: 400px;
-  border-radius: 10px;
+  height: 200px;
+
   object-fit: cover;
-  margin-bottom: 10px;
+  display: block;
 }
 
 .realisation-image {
@@ -52,7 +52,7 @@ main {
 }
 
 .realisation-text {
-  padding: 15px;
+  padding: 10px;
   margin-top: 10px;
   text-align: left;
   margin: 0;
@@ -115,6 +115,7 @@ main {
   flex-direction: column;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 500px; /* Hauteur fixe */
 }
 
 .realisation-box:hover {
@@ -217,7 +218,7 @@ main {
 /* Image modal */
 .modal-image {
   max-width: 100%;
-  max-height: 60vh;
+  max-height: 40vh;
   border-radius: 10px;
   margin-bottom: 15px;
 }
