@@ -580,7 +580,7 @@ body, html {
 }
 .content {
   position: absolute;
-  top: 230px; /* ajuste selon ton besoin */
+ margin-top: 20vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -681,41 +681,57 @@ body, html {
     font-size: 1rem;
     padding: 10px 20px;
   }
-}
-/* Desktop - version responsive selon la taille de l'écran */
-@media (min-width: 769px) {
-  .overlay {
-    position: relative;
-    display: flex;
+}@media (min-width: 600px) and (max-width: 1024px) {
+  .accueil-container {
+    height: auto !important;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* centre verticalement */
-    text-align: center;
-    min-height: 100vh;
-    padding: 0;
+    justify-content: flex-start;
+    padding-top: 40px; /* espace en haut */
   }
 
-  .overlay .image-container {
+  .overlay {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: static;
+    height: auto;
     width: 100%;
-    max-width: 2000px;
-    margin-left: 40px;
-    margin-top: -400px;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .overlay .titre-principal-img {
+  .image-container {
+    margin: 40px auto 10px auto; /* LOGO plus bas */
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .image-container img.titre-principal-img {
     width: 100%;
     height: auto;
-    display: block;
   }
 
-  /* Le bloc texte est centré verticalement par rapport à l'image */
-  .overlay .content {
-    position: relative; /* plus besoin de top fixe */
-    margin-top: -50%;   /* ajuste en pourcentage selon la taille de l'image */
-    margin-left: -45%;
-    max-width: 640px;
-    color: white;
+  .content {
+    position: static;
+    transform: none;
     text-align: center;
+    margin-top: -10px;     /* TEXTE plus haut (se rapproche du logo) */
+    padding: 0 20px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+
+  .btn-rapport {
+    font-size: 1rem;
+    padding: 10px 24px;
   }
 }
+
