@@ -578,13 +578,17 @@ body, html {
   flex-direction: column; /* empile verticalement */
   align-items: center;    /* centre horizontalement */
 }
+
+@media (min-width: 1025px) {
 .content {
   position: absolute;
- margin-top: 20vh;
+  margin-top: 24vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
+}
+
 .voir-plus-container {
   width: 100%;
   display: flex;
@@ -734,4 +738,3 @@ body, html {
     padding: 10px 24px;
   }
 }
-
