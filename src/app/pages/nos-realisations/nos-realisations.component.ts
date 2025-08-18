@@ -39,7 +39,8 @@ export class NosRealisationsComponent {
         image: 'E36ABD53.png'
     },
     {
-      description: `Dons alimentaires pour les communes de Namakia, Mitsinjo et Katsepy en mars 2025.<br>Montant total des dons : 100 000 000 ariary, soit 20 833 euros.`,
+      description: `Octroie des dons alimentaires en collaboration avec le Député élu dans le District, pour les Communes de Namakia, Mitsinjo et Katsepy, en mars 2025.
+Montant total des dons : 100 000 000 ariary, soit 20 833 euros`,
       image: 'voria.jpg'
     },
     {
