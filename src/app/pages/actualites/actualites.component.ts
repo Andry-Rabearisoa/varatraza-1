@@ -27,6 +27,16 @@ export class ActualitesComponent {
    
     }
     ,
+      {
+
+      image: 'sary 2.jpg',
+      titre:'A mon nom Constant doit aller voir la Présidente de KB8eme de Katsepy pour récupérer une machine.',
+      description: `Fournissez à Constant une lettre de mission officielle ou un document attestant de son autorité pour récupérer la machine.
+Assurez-vous qu'il dispose des informations nécessaires : identité de la Présidente, adresse ou coordonnées précises du lieu, description de la machine (type, modèle, état attendu).
+Fournissez-lui un modèle de décharge (voir ci-dessous) à faire signer par la Présidente.`
+   
+    }
+    ,
     {
    image: '1753431582193.jpg',
    titre:'Périmètre irrigué d’Antseza',
