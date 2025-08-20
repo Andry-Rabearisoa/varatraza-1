@@ -12,10 +12,6 @@ export class NosRealisationsComponent {
   realisations = [
 
 
-    {
-      description: `zo rahelimalala izao dia lasa mpanoratra ato amin ny tranokalan ny varatraza,monina eny Mandroseza,`,
-      image: 'image1.jpg'
-    },
     
     {
       description: `Nouvelle construction et réhabilitation des bâtiments du poste de la Gendarmerie de la Commune d’Ambarimaninga<br>Début des travaux : juin 2024<br>Achèvement : mars 2025<br>Coût des travaux : 14 000 000 ariary, soit 2 917 euros.`,
