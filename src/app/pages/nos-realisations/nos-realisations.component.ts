@@ -10,12 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NosRealisationsComponent {
   realisations = [
-   {
-      description: `Fournissez à Constant une lettre de mission officielle ou un document attestant de son autorité pour récupérer la machine.
-Assurez-vous qu'il dispose des informations nécessaires : identité de la Présidente, adresse ou coordonnées précises du lieu, description de la machine (type, modèle, état attendu).
-Fournissez-lui un modèle de décharge (voir ci-dessous) à faire signer par la Présidente.`,
-      image: 'IMG_20210904_180315.jpg'
-    },
+   
     {
       description: `Nouvelle construction et réhabilitation des bâtiments du poste de la Gendarmerie de la Commune d’Ambarimaninga<br>Début des travaux : juin 2024<br>Achèvement : mars 2025<br>Coût des travaux : 14 000 000 ariary, soit 2 917 euros.`,
       image: 'image1.jpg'
