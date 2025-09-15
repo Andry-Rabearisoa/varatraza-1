@@ -578,13 +578,17 @@ body, html {
   flex-direction: column; /* empile verticalement */
   align-items: center;    /* centre horizontalement */
 }
+
+@media (min-width: 1025px) {
 .content {
   position: absolute;
-  top: 230px; /* ajuste selon ton besoin */
+  margin-top: 24vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
+}
+
 .voir-plus-container {
   width: 100%;
   display: flex;
@@ -680,5 +684,57 @@ body, html {
   .btn-rapport {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+}@media (min-width: 600px) and (max-width: 1024px) {
+  .accueil-container {
+    height: auto !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px; /* espace en haut */
+  }
+
+  .overlay {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: static;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .image-container {
+    margin: 40px auto 10px auto; /* LOGO plus bas */
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .image-container img.titre-principal-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: -10px;     /* TEXTE plus haut (se rapproche du logo) */
+    padding: 0 20px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+
+  .btn-rapport {
+    font-size: 1rem;
+    padding: 10px 24px;
   }
 }
